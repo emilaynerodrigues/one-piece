@@ -1,4 +1,4 @@
-## Projeto "One Piece Characters"
+## Projeto "One Piece"
 
 Este projeto faz parte da "Semana do Zero ao Programador Contratado", uma iniciativa promovida pelo canal "Dev em Dobro". O objetivo é desenvolver um website para apresentar informações sobre os personagens do anime "One Piece". Cada personagem terá uma breve descrição para fornecer aos fãs uma rápida introdução a seus perfis e histórias.
 

@@ -1,13 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
 }
 
-.character-info .description{
-    font-family: 'Rubik', sans-serif;
+ul {
+  list-style: none;
 }
 
-.character-info .name{
-    font-family: 'Secular One', sans-serif;
+/* styles */
+
+body {
+  background-color: #000;
 }
+
+/* efeito do fundo espumado */
+main.wrapper-content::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 80vw;
+  background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+}
+
+.character-content {
+  display: none;
+  height: 100vh;
+}
+
+.character-content.active {
+  display: block;
+}
+
+.character-content .character-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.character-info {
+  /* background-color: orange; */
+  min-height: 100vh; /*altura minima*/
+  max-width: 380px;
+  position: absolute;
+  top: 0;
+  left: 10%; /*eles usaram 120px*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.character-info .logo {
+  background-image: url("/src/assets/one-piece-logo.png");
+  background-size: cover;
+  width: 180px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.character-info .name {
+  font-family: "Secular One", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.character-info .description {
+  font-family: "Rubik", sans-serif;
+  line-height: 24px;
+}
+
+/* buttons */
+
+.wrapper-buttons {
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-height: 100vh;
+  width: 13vw; /*usaram 180px*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper-buttons .button {
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.wrapper-buttons .button button {
+  border: none;
+  background: none;
+}
+
+.wrapper-buttons .button img {
+  border-radius: 50%;
+}
+
+.wrapper-buttons .button.active {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px #d9d9d9;
+}
+
+

@@ -14,6 +14,7 @@ ul {
 
 body {
   background-color: #000;
+  /* overflow: hidden; */
 }
 
 /* efeito do fundo espumado */
@@ -92,22 +93,20 @@ main.wrapper-content::after {
 }
 
 .wrapper-buttons .button {
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.wrapper-buttons .button button {
   border: none;
-  background: none;
+  cursor: pointer;
+  background: #000;
+  border-radius: 50%;
 }
 
 .wrapper-buttons .button img {
   border-radius: 50%;
+  height: 10vh;
+  object-fit: contain;
 }
 
 .wrapper-buttons .button.active {
   transform: scale(1.15);
-  box-shadow: 0 0 10px #d9d9d9;
+  box-shadow: 0 0 10px #d9d9d95e;
+  transition: 0.3s all;
 }
-
-

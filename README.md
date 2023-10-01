@@ -2,6 +2,8 @@
 
 Este projeto faz parte da "Semana do Zero ao Programador Contratado", uma iniciativa promovida pelo canal "Dev em Dobro". O objetivo é desenvolver um website para apresentar informações sobre os personagens do anime "One Piece". Cada personagem terá uma breve descrição para fornecer aos fãs uma rápida introdução a seus perfis e histórias.
 
+Link de acesso: https://emilaynerodrigues.github.io/one-piece/
+
 ## Funcionalidades Principais
 
 1. **Apresentação de Personagens**: Listagem dos personagens de "One Piece" com suas respectivas imagens e nomes.
